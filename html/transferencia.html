@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA DE TRANSFERENCIAS</title>
+    <link rel="stylesheet" href="/css/style2.css">
+</head>
+<body>
+    <h1>Transferencia de Dinero</h1>
+    <form id="transferForm" onsubmit="javascript:realizar_transferencia()"> 
+        <label for="originAccount">Cuenta Origen:</label>
+        <input type="text" id="cuentaOrigen" required><br>
+        <label for="destinationAccount">Cuenta Destino:</label>
+        <input type="text" id="cuentaDestino" required><br>
+        <label for="amount">Importe:</label>
+        <input type="number" id="saldo" required><br>
+        <button type="submit">Realizar Transferencia</button>
+    </form>
+    <br>
+    <button type="button" onclick="location.href='/login.html'">Salir - Cambiar Usuario</button>
+
+    <script src="/js/clases.js"></script>
+    <script src="/js/datosCuenta.js"></script>
+    <script src="/js/funcionamiento.js"></script>
+</body>
+</html>
